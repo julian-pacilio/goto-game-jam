@@ -1,0 +1,182 @@
+[
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4061"
+    },
+    "name": "Space Adventures",
+    "genre": "Ciencia Ficción",
+    "members": ["Alice Johnson", "Bob Smith", "Charlie Brown"],
+    "edition": "2023"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4062"
+    },
+    "name": "Fantasy Quest",
+    "genre": "Fantasía",
+    "members": ["David Lee", "Emily White", "Frank Martinez"],
+    "edition": "2023"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4063"
+    },
+    "name": "Zombie Survival",
+    "genre": "Survival Horror",
+    "members": ["Grace Turner", "Henry Davis", "Ivy Perez"],
+    "edition": "2024"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4064"
+    },
+    "name": "Racing Rivals",
+    "genre": "Carreras",
+    "members": ["Jack Wilson", "Kate Evans", "Liam Anderson"],
+    "edition": "2025"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4065"
+    },
+    "name": "Medieval Conquest",
+    "genre": "Estrategia",
+    "members": ["Mia Garcia", "Nathan Clark", "Olivia Hall"],
+    "edition": "2023"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4066"
+    },
+    "name": "Mystery Mansion",
+    "genre": "Aventura",
+    "members": ["Peter Brown", "Quinn Smith", "Riley Johnson"],
+    "edition": "2026"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4067"
+    },
+    "name": "Cyberpunk Chronicles",
+    "genre": "Ciencia Ficción",
+    "members": ["Sophia Wilson", "Tyler Davis", "Ursula Taylor"],
+    "edition": "2023"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4068"
+    },
+    "name": "Pirate Plunder",
+    "genre": "Aventura",
+    "members": ["Violet Martin", "William Turner", "Xander Lewis"],
+    "edition": "2027"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4069"
+    },
+    "name": "Warrior's Legacy",
+    "genre": "Fantasía",
+    "members": ["Yasmine Garcia", "Zane Parker", "Adam White"],
+    "edition": "2028"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e406a"
+    },
+    "name": "Apocalyptic Escape",
+    "genre": "Survival Horror",
+    "members": ["Zara Hall", "Benjamin Clark", "Caleb Young"],
+    "edition": "2024"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e406b"
+    },
+    "name": "Deep Sea Explorer",
+    "genre": "Aventura",
+    "members": ["Lily Thomas", "Ethan Baker", "Chloe Davis"],
+    "edition": "2025"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e406c"
+    },
+    "name": "Galactic Conquest",
+    "genre": "Ciencia Ficción",
+    "members": ["Xander Smith", "Ava Martin", "Noah Wilson"],
+    "edition": "2026"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e406d"
+    },
+    "name": "Wild West Shootout",
+    "genre": "Aventura",
+    "members": ["Lucas Hall", "Leah Johnson", "Mason Clark"],
+    "edition": "2023"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e406e"
+    },
+    "name": "Epic Racing Challenge",
+    "genre": "Carreras",
+    "members": ["Oliver Turner", "Grace White", "Zoe Parker"],
+    "edition": "2024"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e406f"
+    },
+    "name": "Fantasy Realm",
+    "genre": "Fantasía",
+    "members": ["Ella Davis", "Liam Johnson", "Aria Smith"],
+    "edition": "2027"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4070"
+    },
+    "name": "Haunted Mansion",
+    "genre": "Survival Horror",
+    "members": ["Luna Wilson", "Leo Martin", "Sofia Brown"],
+    "edition": "2026"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4071"
+    },
+    "name": "Lost in Space",
+    "genre": "Ciencia Ficción",
+    "members": ["Milo Clark", "Nora Hall", "Oscar Turner"],
+    "edition": "2024"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4072"
+    },
+    "name": "Ancient Kingdoms",
+    "genre": "Fantasía",
+    "members": ["Aiden White", "Chloe Martin", "Eli Davis"],
+    "edition": "2028"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4073"
+    },
+    "name": "Ghostly Encounters",
+    "genre": "Aventura",
+    "members": ["Zara Smith", "Mason Parker", "Olivia Davis"],
+    "edition": "2023"
+  },
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4074"
+    },
+    "name": "Desert Racing Madness",
+    "genre": "Carreras",
+    "members": ["Noah Martin", "Aria Turner", "Xavier Wilson"],
+    "edition": "2025"
+  }
+]
