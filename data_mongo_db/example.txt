@@ -1,0 +1,62 @@
+* Se esperaba que tanto el nombre del juez como el del juego se embeban en la colección de votos para no estar buscándolo cada vez que necesitemos el reporte
+
+! Solución {
+  ? En la función 'addVote()', deberia recibir el objeto del voto, llamar a los servicios de Games y Judges, para obtener la información mediante los ID de judge_id y game_id, para luego embeber la información necesaria (id, name) en la colección de votos.
+
+  TODO: Desvincular la responsabilidad del Servicio de Jueces de buscar el nombre del juez  en 'findVotesByGame()'
+  TODO: Desvincular la responsabilidad del Servicio de Juegos de buscar el nombre del juego en 'findVotesByJudge()'
+
+  TODO: Agregar la responsabilidad de guardar la sumatoria de votos en el Juego en 'addVote()'
+
+  * Ejemplo:
+  {
+    "_id": {
+      "$oid": "654e4bad77e82330fdc794f4"
+    },
+    "gameplay": 5,
+    "art": 2,
+    "sound": 3,
+    "thematic_affinity": 4,
+    "judge" : {
+        "judge_id": "6540213e9217df944e3e404d",
+        "judge_name": "Cris Redfield"
+    },
+    "game" : {
+        "game_id": {
+            "$oid": "654031009217df944e3e4061"
+          },
+          "game_name": "Space Adventures"
+    }
+  }
+
+}
+
+* Se esperaba que al momento de generar un juego nuevo, se agrege un campo donde guardaremos los puntos totales acumulados para que cada vez que se realice un voto al juego se le modifica actualizando los puntos, de esta forma para consultar y ordenar es simplemente usar la sort del metodo find de mongodb
+
+
+! Solución {
+
+  ? En la función 'addGame()', recibo el objeto game con los datos requeridos y agrego el campo 'totalScore'
+
+    TODO: Desvincular la responsabilidad del Servicio de Games de agregar el campo 'totalScore' en 'getGamesByEdition()' y calcular el total.
+    TODO: Reducir la consulta de 'getGamesByEdition()' a => { 
+      const games = await GamesCollection.find(filterMongo).sort({"totalScore: -1"}).toArray();
+    }
+
+  * Ejemplo:
+  {
+    "_id": {
+      "$oid": "654031009217df944e3e4061"
+    },
+    "name": "Space Adventures",
+    "genre": "Ciencia Ficción",
+    "members": [
+      "Alice Johnson",
+      "Bob Smith",
+      "Charlie Brown"
+    ],
+    "edition": "2023",
+    "totalScore" : 0,
+  }
+}
+

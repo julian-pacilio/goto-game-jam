@@ -31,30 +31,9 @@ async function getGamesByEdition(jam_edition, filter = {}) {
 
   const filterMongo = filterQueryToMongo(filter);
 
-  const games = await GamesCollection.find(filterMongo).toArray();
+  const games = await GamesCollection.find(filterMongo).sort({ "totalScore" : -1 }).toArray();
 
-  let requested_data = [];
-
-  for (let game of games) {
-    const votes = await GamesVotesService.findVotesByGame(game._id);
-
-    const totalScore = votes.reduce((acc, vote) => {
-      return (
-        acc + vote.gameplay + vote.art + vote.sound + vote.thematic_affinity
-      );
-    }, 0);
-
-    const data = {
-      game,
-      totalScore,
-    };
-
-    requested_data.push(data);
-  }
-
-  requested_data.sort((a, b) => b.totalScore - a.totalScore);
-
-  return requested_data;
+  return games;
 }
 
 /**
@@ -127,7 +106,7 @@ async function getGameById(id) {
  */
 async function addGame(game) {
   await client.connect();
-  const newGame = { ...game };
+  const newGame = { ...game, totalScore: 0 };
   await GamesCollection.insertOne(newGame);
   return newGame;
 }

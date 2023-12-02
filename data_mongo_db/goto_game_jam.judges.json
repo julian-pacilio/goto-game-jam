@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6540213e9217df944e3e404d"
+  },
+  "name": "Cris",
+  "surname": "Redfield",
+  "email": "judge.redfield@gotogamejam.com",
+  "password": "$2b$10$Gkn3oMgWT.Kh.AViawgAsO0RjNK3UUFpjWR1rgKKv.rSUQmJHkGNu",
+  "rol": "judge"
+},
+{
+  "_id": {
+    "$oid": "6540213e9217df944e3e404e"
+  },
+  "name": "Jill",
+  "surname": "Valentine",
+  "email": "judge.valentine@gotogamejam.com",
+  "password": "$2b$10$Gkn3oMgWT.Kh.AViawgAsO0RjNK3UUFpjWR1rgKKv.rSUQmJHkGNu",
+  "rol": "judge"
+},
+{
+  "_id": {
+    "$oid": "654c32aba60e3d0fbdb58261"
+  },
+  "name": "Leon Scott",
+  "surname": "Kennedy",
+  "email": "judge.kennedy@gotogamejam.com",
+  "password": "$2b$10$Gkn3oMgWT.Kh.AViawgAsO0RjNK3UUFpjWR1rgKKv.rSUQmJHkGNu",
+  "rol": "judge"
+},
+{
+  "_id": {
+    "$oid": "654c32d0a60e3d0fbdb58263"
+  },
+  "name": "Piers",
+  "surname": "Nivans",
+  "email": "judge.nivans@gotogamejam.com",
+  "password": "$2b$10$Gkn3oMgWT.Kh.AViawgAsO0RjNK3UUFpjWR1rgKKv.rSUQmJHkGNu",
+  "rol": "judge"
+}]

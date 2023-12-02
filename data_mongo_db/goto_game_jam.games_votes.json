@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "6566382d4a75370e474a525e"
+  },
+  "gameplay": 10,
+  "art": 2,
+  "sound": 5,
+  "thematic_affinity": 10,
+  "judge": {
+    "_id": {
+      "$oid": "654c32d0a60e3d0fbdb58263"
+    },
+    "name": "Piers Evans"
+  },
+  "game": {
+    "_id": {
+      "$oid": "654031009217df944e3e4061"
+    },
+    "name": "Space Adventures"
+  }
+},
+{
+  "_id": {
+    "$oid": "656638504a75370e474a525f"
+  },
+  "gameplay": 3,
+  "art": 2,
+  "sound": 5,
+  "thematic_affinity": 1,
+  "judge": {
+    "_id": {
+      "$oid": "654c32aba60e3d0fbdb58261"
+    },
+    "name": "Leon Scott Kennedy"
+  },
+  "game": {
+    "_id": {
+      "$oid": "654031009217df944e3e4061"
+    },
+    "name": "Space Adventures"
+  }
+},
+{
+  "_id": {
+    "$oid": "656638584a75370e474a5260"
+  },
+  "gameplay": 10,
+  "art": 5,
+  "sound": 10,
+  "thematic_affinity": 1,
+  "judge": {
+    "_id": {
+      "$oid": "6540213e9217df944e3e404e"
+    },
+    "name": "Jill Valentine"
+  },
+  "game": {
+    "_id": {
+      "$oid": "654031009217df944e3e4061"
+    },
+    "name": "Space Adventures"
+  }
+},
+{
+  "_id": {
+    "$oid": "65663ec84a75370e474a5261"
+  },
+  "gameplay": 10,
+  "art": 5,
+  "sound": 10,
+  "thematic_affinity": 1,
+  "judge": {
+    "_id": {
+      "$oid": "6540213e9217df944e3e404e"
+    },
+    "name": "Jill Valentine"
+  },
+  "game": {
+    "_id": {
+      "$oid": "654031009217df944e3e4062"
+    },
+    "name": "Fantasy Quest"
+  }
+}]
