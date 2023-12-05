@@ -31,6 +31,8 @@ async function getGamesByEdition(jam_edition, filter = {}) {
 
   const filterMongo = filterQueryToMongo(filter);
 
+  console.log(filterMongo)
+
   const games = await GamesCollection.find(filterMongo).sort({ "totalScore" : -1 }).toArray();
 
   return games;

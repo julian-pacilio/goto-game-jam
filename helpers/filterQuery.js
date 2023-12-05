@@ -16,5 +16,9 @@ export default function filterQueryToMongo(filter) {
     filterMongo.edition = filter.edition;
   }
 
+  if (filter.edition == 'all') {
+    filterMongo.edition = { $exists: true }
+  }
+
   return filterMongo;
 }
