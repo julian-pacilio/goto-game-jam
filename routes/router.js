@@ -5,6 +5,11 @@ import GameVotesController from "../controllers/gamesVotes.js";
 import AccountsController from "../controllers/accounts.js";
 
 import {
+  validateGameCreate,
+  validateGameIdExists
+} from "../middleware/games.js";
+
+import {
   validateVoteCreate,
   validateGameandJudgeIdExists,
   checkPreviousJudgeVoteExists,
@@ -24,13 +29,13 @@ const route = express.Router();
 route
   .route("/games")
   .get(GamesController.getAllGames)
-  .post(GamesController.addGame);
+  .post([verifySession, validateGameCreate], GamesController.addGame);
 
 route
   .route("/games/:idGame")
-  .get(GamesController.getGameById)
-  .patch(GamesController.editGame)
-  .delete(GamesController.deleteGame);
+  .get([validateGameIdExists],GamesController.getGameById)
+  .patch([verifySession, validateGameIdExists], GamesController.editGame)
+  .delete([verifySession, validateGameIdExists], GamesController.deleteGame);
 
 route
   .route("/games/:idGame/average")
@@ -40,9 +45,10 @@ route.route("/games/edition/:edition").get(GamesController.getGamesByEdition);
 
 route
   .route("/games/:idGame/votes")
-  .get(GameVotesController.getVotesByGame)
+  .get([validateGameIdExists], GameVotesController.getVotesByGame)
   .post(
     [
+      verifySession,
       validateVoteCreate,
       validateGameandJudgeIdExists,
       checkPreviousJudgeVoteExists,
